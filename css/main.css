@@ -493,7 +493,7 @@ html[dir='rtl'] .nav-li:nth-last-child() {
 }
 
 .nav-a:hover, .nav-a:focus {
-  color: #fff;
+  color: #FFB4B4;
 }
 
 .owl-carousel .owl-item {
