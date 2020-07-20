@@ -489,6 +489,7 @@ html[dir='rtl'] .nav-li:nth-last-child() {
   color: #fff;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  text-transform: capitalize;
 }
 
 .nav-a:hover, .nav-a:focus {
@@ -816,6 +817,7 @@ html[dir='rtl'] .nav-li:nth-last-child() {
   color: #000000;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  text-transform: capitalize;
 }
 
 .cat:hover .cat-img img {
@@ -1498,6 +1500,7 @@ html[dir='rtl'] .cart-cont .cart-anchor .text {
   font-weight: bold;
   text-align: center;
   margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 .feats-cont {
@@ -1589,16 +1592,30 @@ html[dir='rtl'] .feat {
   font-size: 18px;
   font-weight: bold;
   color: #fff;
+  text-transform: capitalize;
 }
 
 .feat .feat-desc {
   margin-top: 7px;
   font-size: 14px;
   color: #FFB4B4;
+  text-transform: capitalize;
+}
+
+html[dir='ltr'] .feat .feat-desc br {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  html[dir='ltr'] .feat .feat-desc br {
+    display: block;
+  }
 }
 
 .news-letter {
   width: 340px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 @media (max-width: 991px) {
@@ -1614,6 +1631,7 @@ html[dir='rtl'] .feat {
   font-weight: bold;
   color: #fff;
   margin-bottom: 16px;
+  text-transform: capitalize;
 }
 
 footer {
@@ -1657,6 +1675,7 @@ footer {
   font-size: 16px;
   color: #8C2C26;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 html[dir='ltr'] .social-head {
@@ -1709,6 +1728,7 @@ html[dir='rtl'] .social-head {
   color: #8C2C26;
   font-weight: bold;
   margin-bottom: 19px;
+  text-transform: uppercase;
 }
 
 .nav-foot-li {
