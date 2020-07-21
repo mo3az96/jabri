@@ -771,10 +771,11 @@ html[dir='rtl'] .nav-li:nth-last-child() {
 
 @media (max-width: 991px) {
   .cats {
-    gap: unset;
-    -ms-grid-columns: unset;
-        grid-template-columns: unset;
-    display: block;
+    gap: 25px 15px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    display: -ms-grid;
+    display: grid;
     margin-top: 25px;
   }
 }
@@ -806,6 +807,12 @@ html[dir='rtl'] .nav-li:nth-last-child() {
   margin-bottom: 15px;
 }
 
+@media (max-width: 991px) {
+  .cat .cat-img {
+    border-radius: 20px;
+  }
+}
+
 .cat .cat-img img {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -818,6 +825,12 @@ html[dir='rtl'] .nav-li:nth-last-child() {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-transform: capitalize;
+}
+
+@media (max-width: 991px) {
+  .cat .cat-name {
+    font-size: 18px;
+  }
 }
 
 .cat:hover .cat-img img {
